@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Exam</a></li>
+                <li><a class="dropdown-item" href="#">Practice</a></li>
+                <li><a class="dropdown-item" href="#">Quiz</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link disabled">Contact</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Section -->
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+        <img src="image.png"  height="300" width="550" alt="online test">
+        </div>
+        <div class="col-md-6">
+          <h5>Login</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Question 1 -->
+<div class="card w-100">
+  <div class="card-body">
+    <h5 class="card-title">Question 1</h5>
+    <p class="card-text">What is your favorite food?</p>
+    <form>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" id="q1_pizza" value="pizza">
+        <label class="form-check-label" for="q1_pizza">Pizza</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" id="q1_biryani" value="biryani">
+        <label class="form-check-label" for="q1_biryani">Biryani</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" id="q1_paratha" value="paratha">
+        <label class="form-check-label" for="q1_paratha">Paratha</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+      <button type="button" class="btn btn-secondary btn-sm mt-2">Next Question</button>
+    </form>
+  </div>
+</div>
+<br>
+<!-- Question 2 -->
+<div class="card w-100">
+  <div class="card-body">
+    <h5 class="card-title">Question 2</h5>
+    <p class="card-text">What is your name?</p>
+    <form>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q2" id="q2_srijaa" value="srijaa">
+        <label class="form-check-label" for="q2_srijaa">Srijaa</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q2" id="q2_pooja" value="pooja">
+        <label class="form-check-label" for="q2_pooja">Pooja</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q2" id="q2_roja" value="roja">
+         <label class="form-check-label" for="q2_roja">roja</label>
+         </div>
+         <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+      <button type="button" class="btn btn-secondary btn-sm mt-2">Next Question</button>
+    </form>
+  </div>
+</div>
+<br>
+<!-- Question 3 -->
+<div class="card w-100 mt-3">
+  <div class="card-body">
+    <h5 class="card-title">Question 3</h5>
+    <p class="card-text">What is your age?</p>
+    <form>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q3" id="q3_18" value="18">
+        <label class="form-check-label" for="q3_18">18</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q3" id="q3_20" value="20">
+        <label class="form-check-label" for="q3_20">20</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q3" id="q3_21" value="21">
+        <label class="form-check-label" for="q3_21">21</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+      <button type="button" class="btn btn-secondary btn-sm mt-2">Next Question</button>
+    </form>
+  </div>
+</body>
